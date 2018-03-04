@@ -1,0 +1,586 @@
+2018-03-03 21:05:16 [-][-][-][error][yii\db\Exception] PDOException: could not find driver in /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Connection.php:686
+Stack trace:
+#0 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Connection.php(686): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Connection.php(612): yii\db\Connection->createPdoInstance()
+#2 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Connection.php(995): yii\db\Connection->open()
+#3 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Connection.php(982): yii\db\Connection->getMasterPdo()
+#4 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#5 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Command.php(1140): yii\db\Command->prepare(true)
+#6 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Command.php(396): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/mysql/Schema.php(313): yii\db\Command->queryAll()
+#8 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/mysql/Schema.php(126): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/controllers/MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#16 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#17 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#18 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#19 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#20 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#21 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 /var/www/html/allympia-task-yii2/yii(23): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: could not find driver in /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Connection.php:623
+Stack trace:
+#0 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Connection.php(995): yii\db\Connection->open()
+#1 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Connection.php(982): yii\db\Connection->getMasterPdo()
+#2 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Command.php(1140): yii\db\Command->prepare(true)
+#4 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Command.php(396): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/mysql/Schema.php(313): yii\db\Command->queryAll()
+#6 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/mysql/Schema.php(126): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/controllers/MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#11 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#13 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#14 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#16 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#17 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#18 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#19 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 /var/www/html/allympia-task-yii2/yii(23): yii\base\Application->run()
+#21 {main}
+Additional Information:
+
+2018-03-03 21:05:16 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'CLUTTER_IM_MODULE' => 'xim'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LC_MEASUREMENT' => 'en_US.UTF-8'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'LC_PAPER' => 'en_US.UTF-8'
+    'LC_MONETARY' => 'en_US.UTF-8'
+    'XDG_MENU_PREFIX' => 'gnome-'
+    'LANG' => 'en_US.UTF-8'
+    'DISPLAY' => ':0'
+    'OLDPWD' => '/etc/nginx/sites-available'
+    'GNOME_SHELL_SESSION_MODE' => 'ubuntu'
+    'COLORTERM' => 'truecolor'
+    'DESKTOP_AUTOSTART_ID' => '10baabc2a4f250a534152010643154957400000213850008'
+    'USERNAME' => 'tariqtawalbeh'
+    'XDG_VTNR' => '2'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'MANDATORY_PATH' => '/usr/share/gconf/ubuntu.mandatory.path'
+    'LC_NAME' => 'en_US.UTF-8'
+    'XDG_SESSION_ID' => '7'
+    'USER' => 'tariqtawalbeh'
+    'DESKTOP_SESSION' => 'ubuntu'
+    'QT4_IM_MODULE' => 'xim'
+    'TEXTDOMAINDIR' => '/usr/share/locale/'
+    'GNOME_TERMINAL_SCREEN' => '/org/gnome/Terminal/screen/437b0671_e54c_4bec_af3a_0b7d318ff287'
+    'DEFAULTS_PATH' => '/usr/share/gconf/ubuntu.default.path'
+    'PWD' => '/var/www/html/allympia-task-yii2'
+    'HOME' => '/home/tariqtawalbeh'
+    'TEXTDOMAIN' => 'im-config'
+    'SSH_AGENT_PID' => '21485'
+    'QT_ACCESSIBILITY' => '1'
+    'XDG_SESSION_TYPE' => 'x11'
+    'XDG_DATA_DIRS' => '/usr/share/ubuntu:/usr/share/ubuntu:/usr/local/share:/usr/share:/var/lib/snapd/desktop'
+    'XDG_SESSION_DESKTOP' => 'ubuntu'
+    'LC_ADDRESS' => 'en_US.UTF-8'
+    'LC_NUMERIC' => 'en_US.UTF-8'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'PAPERSIZE' => 'letter'
+    'WINDOWPATH' => '2'
+    'VTE_VERSION' => '5190'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'QT_IM_MODULE' => 'xim'
+    'XMODIFIERS' => '@im=ibus'
+    'IM_CONFIG_PHASE' => '2'
+    'XDG_CURRENT_DESKTOP' => 'ubuntu:GNOME'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'GNOME_TERMINAL_SERVICE' => ':1.62'
+    'XDG_SEAT' => 'seat0'
+    'SHLVL' => '1'
+    'LANGUAGE' => 'en_US'
+    'LC_TELEPHONE' => 'en_US.UTF-8'
+    'GDMSESSION' => 'ubuntu'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'LOGNAME' => 'tariqtawalbeh'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'XAUTHORITY' => '/run/user/1000/gdm/Xauthority'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-ubuntu:/etc/xdg/xdg-ubuntu:/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'LC_IDENTIFICATION' => 'en_US.UTF-8'
+    'SESSION_MANAGER' => 'local/tariqtawalbeh-ThinkPad-Edge-E440:@/tmp/.ICE-unix/21385,unix/tariqtawalbeh-ThinkPad-Edge-E440:/tmp/.ICE-unix/21385'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'GTK_IM_MODULE' => 'ibus'
+    'LC_TIME' => 'en_US.UTF-8'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1520111116.5815
+    'REQUEST_TIME' => 1520111116
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-03-03 21:05:36 [-][-][-][error][yii\db\Exception] PDOException: could not find driver in /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Connection.php:686
+Stack trace:
+#0 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Connection.php(686): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Connection.php(612): yii\db\Connection->createPdoInstance()
+#2 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Connection.php(995): yii\db\Connection->open()
+#3 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Connection.php(982): yii\db\Connection->getMasterPdo()
+#4 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#5 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Command.php(1140): yii\db\Command->prepare(true)
+#6 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Command.php(396): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/mysql/Schema.php(313): yii\db\Command->queryAll()
+#8 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/mysql/Schema.php(126): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/controllers/MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#16 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#17 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#18 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#19 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#20 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#21 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 /var/www/html/allympia-task-yii2/yii(23): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: could not find driver in /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Connection.php:623
+Stack trace:
+#0 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Connection.php(995): yii\db\Connection->open()
+#1 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Connection.php(982): yii\db\Connection->getMasterPdo()
+#2 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Command.php(1140): yii\db\Command->prepare(true)
+#4 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Command.php(396): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/mysql/Schema.php(313): yii\db\Command->queryAll()
+#6 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/mysql/Schema.php(126): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/controllers/MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#11 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#13 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#14 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#16 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#17 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#18 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#19 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 /var/www/html/allympia-task-yii2/yii(23): yii\base\Application->run()
+#21 {main}
+Additional Information:
+
+2018-03-03 21:05:36 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LC_MEASUREMENT' => 'en_US.UTF-8'
+    'LC_PAPER' => 'en_US.UTF-8'
+    'LC_MONETARY' => 'en_US.UTF-8'
+    'LANG' => 'en_US.UTF-8'
+    'DISPLAY' => ':0'
+    'COLORTERM' => 'truecolor'
+    'LC_NAME' => 'en_US.UTF-8'
+    'HOME' => '/home/tariqtawalbeh'
+    'LC_ADDRESS' => 'en_US.UTF-8'
+    'LC_NUMERIC' => 'en_US.UTF-8'
+    'TERM' => 'xterm-256color'
+    'LANGUAGE' => 'en_US'
+    'LC_TELEPHONE' => 'en_US.UTF-8'
+    'XAUTHORITY' => '/run/user/1000/gdm/Xauthority'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LC_IDENTIFICATION' => 'en_US.UTF-8'
+    'LC_TIME' => 'en_US.UTF-8'
+    'MAIL' => '/var/mail/root'
+    'LOGNAME' => 'root'
+    'USER' => 'root'
+    'USERNAME' => 'root'
+    'SHELL' => '/bin/bash'
+    'SUDO_COMMAND' => '/usr/bin/php yii migrate'
+    'SUDO_USER' => 'tariqtawalbeh'
+    'SUDO_UID' => '1000'
+    'SUDO_GID' => '1000'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1520111136.2975
+    'REQUEST_TIME' => 1520111136
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-03-03 21:45:47 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1698] Access denied for user 'root'@'localhost' in /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Connection.php:686
+Stack trace:
+#0 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Connection.php(686): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Connection.php(612): yii\db\Connection->createPdoInstance()
+#2 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Connection.php(995): yii\db\Connection->open()
+#3 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Connection.php(982): yii\db\Connection->getMasterPdo()
+#4 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#5 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Command.php(1140): yii\db\Command->prepare(true)
+#6 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Command.php(396): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/mysql/Schema.php(313): yii\db\Command->queryAll()
+#8 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/mysql/Schema.php(126): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/controllers/MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#16 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#17 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#18 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#19 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#20 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#21 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 /var/www/html/allympia-task-yii2/yii(23): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1698] Access denied for user 'root'@'localhost' in /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Connection.php:623
+Stack trace:
+#0 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Connection.php(995): yii\db\Connection->open()
+#1 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Connection.php(982): yii\db\Connection->getMasterPdo()
+#2 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Command.php(1140): yii\db\Command->prepare(true)
+#4 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Command.php(396): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/mysql/Schema.php(313): yii\db\Command->queryAll()
+#6 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/mysql/Schema.php(126): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/controllers/MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#11 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#13 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#14 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#16 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#17 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#18 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#19 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 /var/www/html/allympia-task-yii2/yii(23): yii\base\Application->run()
+#21 {main}
+Additional Information:
+
+2018-03-03 21:45:47 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'CLUTTER_IM_MODULE' => 'xim'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LC_MEASUREMENT' => 'en_US.UTF-8'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'LC_PAPER' => 'en_US.UTF-8'
+    'LC_MONETARY' => 'en_US.UTF-8'
+    'XDG_MENU_PREFIX' => 'gnome-'
+    'LANG' => 'en_US.UTF-8'
+    'DISPLAY' => ':0'
+    'OLDPWD' => '/home/tariqtawalbeh'
+    'GNOME_SHELL_SESSION_MODE' => 'ubuntu'
+    'COLORTERM' => 'truecolor'
+    'DESKTOP_AUTOSTART_ID' => '10baabc2a4f250a534152010643154957400000213850008'
+    'USERNAME' => 'tariqtawalbeh'
+    'XDG_VTNR' => '2'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'MANDATORY_PATH' => '/usr/share/gconf/ubuntu.mandatory.path'
+    'LC_NAME' => 'en_US.UTF-8'
+    'XDG_SESSION_ID' => '7'
+    'USER' => 'tariqtawalbeh'
+    'DESKTOP_SESSION' => 'ubuntu'
+    'QT4_IM_MODULE' => 'xim'
+    'TEXTDOMAINDIR' => '/usr/share/locale/'
+    'GNOME_TERMINAL_SCREEN' => '/org/gnome/Terminal/screen/437b0671_e54c_4bec_af3a_0b7d318ff287'
+    'DEFAULTS_PATH' => '/usr/share/gconf/ubuntu.default.path'
+    'PWD' => '/var/www/html/allympia-task-yii2'
+    'HOME' => '/home/tariqtawalbeh'
+    'TEXTDOMAIN' => 'im-config'
+    'SSH_AGENT_PID' => '21485'
+    'QT_ACCESSIBILITY' => '1'
+    'XDG_SESSION_TYPE' => 'x11'
+    'XDG_DATA_DIRS' => '/usr/share/ubuntu:/usr/share/ubuntu:/usr/local/share:/usr/share:/var/lib/snapd/desktop'
+    'XDG_SESSION_DESKTOP' => 'ubuntu'
+    'LC_ADDRESS' => 'en_US.UTF-8'
+    'LC_NUMERIC' => 'en_US.UTF-8'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'PAPERSIZE' => 'letter'
+    'WINDOWPATH' => '2'
+    'VTE_VERSION' => '5190'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'QT_IM_MODULE' => 'xim'
+    'XMODIFIERS' => '@im=ibus'
+    'IM_CONFIG_PHASE' => '2'
+    'XDG_CURRENT_DESKTOP' => 'ubuntu:GNOME'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'GNOME_TERMINAL_SERVICE' => ':1.62'
+    'XDG_SEAT' => 'seat0'
+    'SHLVL' => '1'
+    'LANGUAGE' => 'en_US'
+    'LC_TELEPHONE' => 'en_US.UTF-8'
+    'GDMSESSION' => 'ubuntu'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'LOGNAME' => 'tariqtawalbeh'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'XAUTHORITY' => '/run/user/1000/gdm/Xauthority'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-ubuntu:/etc/xdg/xdg-ubuntu:/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'LC_IDENTIFICATION' => 'en_US.UTF-8'
+    'SESSION_MANAGER' => 'local/tariqtawalbeh-ThinkPad-Edge-E440:@/tmp/.ICE-unix/21385,unix/tariqtawalbeh-ThinkPad-Edge-E440:/tmp/.ICE-unix/21385'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'GTK_IM_MODULE' => 'ibus'
+    'LC_TIME' => 'en_US.UTF-8'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1520113547.2019
+    'REQUEST_TIME' => 1520113547
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-03-03 21:45:58 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'yii2advanced' in /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Connection.php:686
+Stack trace:
+#0 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Connection.php(686): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Connection.php(612): yii\db\Connection->createPdoInstance()
+#2 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Connection.php(995): yii\db\Connection->open()
+#3 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Connection.php(982): yii\db\Connection->getMasterPdo()
+#4 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#5 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Command.php(1140): yii\db\Command->prepare(true)
+#6 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Command.php(396): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/mysql/Schema.php(313): yii\db\Command->queryAll()
+#8 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/mysql/Schema.php(126): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/controllers/MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#16 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#17 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#18 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#19 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#20 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#21 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 /var/www/html/allympia-task-yii2/yii(23): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'yii2advanced' in /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Connection.php:623
+Stack trace:
+#0 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Connection.php(995): yii\db\Connection->open()
+#1 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Connection.php(982): yii\db\Connection->getMasterPdo()
+#2 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Command.php(1140): yii\db\Command->prepare(true)
+#4 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Command.php(396): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/mysql/Schema.php(313): yii\db\Command->queryAll()
+#6 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/mysql/Schema.php(126): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/controllers/MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#11 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#13 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#14 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#16 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#17 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#18 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#19 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 /var/www/html/allympia-task-yii2/yii(23): yii\base\Application->run()
+#21 {main}
+Additional Information:
+
+2018-03-03 21:45:58 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LC_MEASUREMENT' => 'en_US.UTF-8'
+    'LC_PAPER' => 'en_US.UTF-8'
+    'LC_MONETARY' => 'en_US.UTF-8'
+    'LANG' => 'en_US.UTF-8'
+    'DISPLAY' => ':0'
+    'COLORTERM' => 'truecolor'
+    'LC_NAME' => 'en_US.UTF-8'
+    'HOME' => '/home/tariqtawalbeh'
+    'LC_ADDRESS' => 'en_US.UTF-8'
+    'LC_NUMERIC' => 'en_US.UTF-8'
+    'TERM' => 'xterm-256color'
+    'LANGUAGE' => 'en_US'
+    'LC_TELEPHONE' => 'en_US.UTF-8'
+    'XAUTHORITY' => '/run/user/1000/gdm/Xauthority'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LC_IDENTIFICATION' => 'en_US.UTF-8'
+    'LC_TIME' => 'en_US.UTF-8'
+    'MAIL' => '/var/mail/root'
+    'LOGNAME' => 'root'
+    'USER' => 'root'
+    'USERNAME' => 'root'
+    'SHELL' => '/bin/bash'
+    'SUDO_COMMAND' => '/usr/bin/php yii migrate'
+    'SUDO_USER' => 'tariqtawalbeh'
+    'SUDO_UID' => '1000'
+    'SUDO_GID' => '1000'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1520113558.3646
+    'REQUEST_TIME' => 1520113558
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-03-03 21:49:10 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'yii2advanced' in /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Connection.php:686
+Stack trace:
+#0 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Connection.php(686): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Connection.php(612): yii\db\Connection->createPdoInstance()
+#2 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Connection.php(995): yii\db\Connection->open()
+#3 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Connection.php(982): yii\db\Connection->getMasterPdo()
+#4 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#5 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Command.php(1140): yii\db\Command->prepare(true)
+#6 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Command.php(396): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/mysql/Schema.php(313): yii\db\Command->queryAll()
+#8 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/mysql/Schema.php(126): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/controllers/MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#16 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#17 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#18 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#19 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#20 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#21 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 /var/www/html/allympia-task-yii2/yii(23): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'yii2advanced' in /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Connection.php:623
+Stack trace:
+#0 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Connection.php(995): yii\db\Connection->open()
+#1 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Connection.php(982): yii\db\Connection->getMasterPdo()
+#2 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Command.php(1140): yii\db\Command->prepare(true)
+#4 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Command.php(396): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/mysql/Schema.php(313): yii\db\Command->queryAll()
+#6 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/mysql/Schema.php(126): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/controllers/MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#11 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#13 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#14 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#16 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#17 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#18 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#19 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 /var/www/html/allympia-task-yii2/yii(23): yii\base\Application->run()
+#21 {main}
+Additional Information:
+
+2018-03-03 21:49:10 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'LC_MEASUREMENT' => 'en_US.UTF-8'
+    'LC_PAPER' => 'en_US.UTF-8'
+    'LC_MONETARY' => 'en_US.UTF-8'
+    'LANG' => 'en_US.UTF-8'
+    'DISPLAY' => ':0'
+    'COLORTERM' => 'truecolor'
+    'LC_NAME' => 'en_US.UTF-8'
+    'HOME' => '/home/tariqtawalbeh'
+    'LC_ADDRESS' => 'en_US.UTF-8'
+    'LC_NUMERIC' => 'en_US.UTF-8'
+    'TERM' => 'xterm-256color'
+    'LANGUAGE' => 'en_US'
+    'LC_TELEPHONE' => 'en_US.UTF-8'
+    'XAUTHORITY' => '/run/user/1000/gdm/Xauthority'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LC_IDENTIFICATION' => 'en_US.UTF-8'
+    'LC_TIME' => 'en_US.UTF-8'
+    'MAIL' => '/var/mail/root'
+    'LOGNAME' => 'root'
+    'USER' => 'root'
+    'USERNAME' => 'root'
+    'SHELL' => '/bin/bash'
+    'SUDO_COMMAND' => '/usr/bin/php yii migrate'
+    'SUDO_USER' => 'tariqtawalbeh'
+    'SUDO_UID' => '1000'
+    'SUDO_GID' => '1000'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1520113750.1955
+    'REQUEST_TIME' => 1520113750
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
