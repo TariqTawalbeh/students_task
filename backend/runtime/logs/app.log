@@ -1,0 +1,330 @@
+2018-03-03 23:46:10 [127.0.0.1][-][tb99b5cp6nrakkiml1t7u72kbh][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: Login Required in /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/web/User.php:438
+Stack trace:
+#0 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/filters/AccessControl.php(156): yii\web\User->loginRequired()
+#1 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Component.php(626): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#9 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#10 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/allympia-task-yii2/backend/web/index.php(17): yii\base\Application->run()
+#12 {main}
+2018-03-03 23:46:10 [127.0.0.1][-][tb99b5cp6nrakkiml1t7u72kbh][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tb99b5cp6nrakkiml1t7u72kbh'
+    '_csrf-backend' => '668160f48f56e154151a003569f43600cb026b933576f0105998279998db8f47a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"5X0Zo-ZryeaitHxIjEQd0oF7ReyV2g-f\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_COOKIE' => 'advanced-backend=tb99b5cp6nrakkiml1t7u72kbh; _csrf-backend=668160f48f56e154151a003569f43600cb026b933576f0105998279998db8f47a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%225X0Zo-ZryeaitHxIjEQd0oF7ReyV2g-f%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,ar;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://backend.ally-proj/'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'backend.ally-proj'
+    'SCRIPT_FILENAME' => '/var/www/html/allympia-task-yii2/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'backend.ally-proj'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '41516'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.13.6'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html/allympia-task-yii2/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/icons/ubuntu-logo.png'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1520120770.4856
+    'REQUEST_TIME' => 1520120770
+]
+2018-03-03 23:46:10 [127.0.0.1][-][tb99b5cp6nrakkiml1t7u72kbh][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: Login Required in /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/web/User.php:438
+Stack trace:
+#0 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/filters/AccessControl.php(156): yii\web\User->loginRequired()
+#1 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Component.php(626): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#9 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#10 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/allympia-task-yii2/backend/web/index.php(17): yii\base\Application->run()
+#12 {main}
+2018-03-03 23:46:10 [127.0.0.1][-][tb99b5cp6nrakkiml1t7u72kbh][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'tb99b5cp6nrakkiml1t7u72kbh'
+    '_csrf-backend' => '668160f48f56e154151a003569f43600cb026b933576f0105998279998db8f47a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"5X0Zo-ZryeaitHxIjEQd0oF7ReyV2g-f\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_COOKIE' => 'advanced-backend=tb99b5cp6nrakkiml1t7u72kbh; _csrf-backend=668160f48f56e154151a003569f43600cb026b933576f0105998279998db8f47a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%225X0Zo-ZryeaitHxIjEQd0oF7ReyV2g-f%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,ar;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://backend.ally-proj/'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'backend.ally-proj'
+    'SCRIPT_FILENAME' => '/var/www/html/allympia-task-yii2/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'backend.ally-proj'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '41516'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.13.6'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html/allympia-task-yii2/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/icons/ubuntu-logo.png'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1520120770.5839
+    'REQUEST_TIME' => 1520120770
+]
+2018-03-04 16:11:16 [127.0.0.1][-][lo7iqkag49j1o34ucu4vfhnjs5][error][yii\base\ErrorException:32] yii\base\ErrorException: Module 'mbstring' already loaded in Unknown:0
+Stack trace:
+#0 {main}
+2018-03-04 16:11:16 [127.0.0.1][-][lo7iqkag49j1o34ucu4vfhnjs5][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_IF_MODIFIED_SINCE' => 'Sat, 03 Mar 2018 21:42:07 GMT'
+    'HTTP_IF_NONE_MATCH' => 'W/\"5a9b16af-2aa6\"'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,ar;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'backend.ally-proj'
+    'SCRIPT_FILENAME' => '/var/www/html/allympia-task-yii2/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'backend.ally-proj'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '55698'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.13.6'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html/allympia-task-yii2/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1520179875.5124
+    'REQUEST_TIME' => 1520179875
+]
+2018-03-04 16:15:56 [127.0.0.1][1][c7ujke8a7r398f8menmel6h1ie][error][yii\base\ErrorException:32] yii\base\ErrorException: Module 'mbstring' already loaded in Unknown:0
+Stack trace:
+#0 {main}
+2018-03-04 16:15:54 [127.0.0.1][1][c7ujke8a7r398f8menmel6h1ie][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf-backend' => 'QBBQshDHOi42WZwEnSqgYY8CDQJHPgm2VWyFRLaF0ZsPcRrLKYheb2US73TLcvoW0EtMaBB3f_0kPNUtjuCVrg=='
+    'LoginForm' => [
+        'username' => 'tariq'
+        'password' => 'tetogone'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'lo7iqkag49j1o34ucu4vfhnjs5'
+    '_csrf-backend' => 'ffb422140f6a972ade2767df3700f48b027e77995729f18289f916f0fb9b4586a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"OaJy9OdASKspVXZw_IAjWIvKqPPi8eD5\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_COOKIE' => 'advanced-backend=lo7iqkag49j1o34ucu4vfhnjs5; _csrf-backend=ffb422140f6a972ade2767df3700f48b027e77995729f18289f916f0fb9b4586a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22OaJy9OdASKspVXZw_IAjWIvKqPPi8eD5%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,ar;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://backend.ally-proj/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://backend.ally-proj'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONTENT_LENGTH' => '239'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'backend.ally-proj'
+    'SCRIPT_FILENAME' => '/var/www/html/allympia-task-yii2/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'backend.ally-proj'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '55742'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.13.6'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html/allympia-task-yii2/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '239'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1520180154.932
+    'REQUEST_TIME' => 1520180154
+]
+2018-03-04 16:16:04 [127.0.0.1][1][c7ujke8a7r398f8menmel6h1ie][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Unable to verify your data submission. in /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/web/Controller.php:166
+Stack trace:
+#0 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('login', Array)
+#2 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/login', Array)
+#3 /var/www/html/allympia-task-yii2/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /var/www/html/allympia-task-yii2/backend/web/index.php(17): yii\base\Application->run()
+#5 {main}
+2018-03-04 16:16:04 [127.0.0.1][1][c7ujke8a7r398f8menmel6h1ie][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf-backend' => 'QBBQshDHOi42WZwEnSqgYY8CDQJHPgm2VWyFRLaF0ZsPcRrLKYheb2US73TLcvoW0EtMaBB3f_0kPNUtjuCVrg=='
+    'LoginForm' => [
+        'username' => 'tariq'
+        'password' => 'tetogone'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'c7ujke8a7r398f8menmel6h1ie'
+    '_identity-backend' => '52309410f1fb63ec232ce67fe2dd813eddf1fb4f99d4ba16dd694bbac8b6e424a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"1WDXuh2WSzl9SQ3fWKShZc22MCGlCJ1w\",2592000]\";}'
+    '_csrf-backend' => '9edb1b02a76ec6333dadf82d1fbae0492c4058d33ed672cdbac8ac6f10bb61e3a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"xkMpzNCi0o_9xPTx6P_zd2baElUFrnff\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_COOKIE' => 'advanced-backend=c7ujke8a7r398f8menmel6h1ie; _identity-backend=52309410f1fb63ec232ce67fe2dd813eddf1fb4f99d4ba16dd694bbac8b6e424a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%221WDXuh2WSzl9SQ3fWKShZc22MCGlCJ1w%22%2C2592000%5D%22%3B%7D; _csrf-backend=9edb1b02a76ec6333dadf82d1fbae0492c4058d33ed672cdbac8ac6f10bb61e3a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22xkMpzNCi0o_9xPTx6P_zd2baElUFrnff%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,ar;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://backend.ally-proj/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ORIGIN' => 'http://backend.ally-proj'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONTENT_LENGTH' => '239'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'backend.ally-proj'
+    'SCRIPT_FILENAME' => '/var/www/html/allympia-task-yii2/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'backend.ally-proj'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '55742'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.13.6'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html/allympia-task-yii2/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '239'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1520180164.1191
+    'REQUEST_TIME' => 1520180164
+]
